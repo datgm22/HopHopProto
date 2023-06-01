@@ -1,52 +1,62 @@
-# ãˆÊƒfƒBƒŒƒNƒgƒŠ‚©‚ç .editorconfig İ’è‚ğŒp³‚·‚éê‡‚ÍAˆÈ‰º‚Ìs‚ğíœ‚µ‚Ü‚·
+# ä¸Šä½ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‹ã‚‰ .editorconfig è¨­å®šã‚’ç¶™æ‰¿ã™ã‚‹å ´åˆã¯ã€ä»¥ä¸‹ã®è¡Œã‚’å‰Šé™¤ã—ã¾ã™
 root = true
 
-# ‘Sƒtƒ@ƒCƒ‹‹¤’Ê
+# å…¨ãƒ•ã‚¡ã‚¤ãƒ«å…±é€š
 [*]
 
-# ‰üs‚ÆƒGƒ“ƒR[ƒhİ’è
+# æ”¹è¡Œã¨ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰è¨­å®š
 end_of_line = crlf
 charset = utf-8
+dotnet_style_qualification_for_field = false:silent
+dotnet_style_qualification_for_property = false:silent
+dotnet_style_qualification_for_method = false:silent
+dotnet_style_qualification_for_event = false:silent
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
+tab_width = 4
+indent_size = 4
 
-# C# ƒtƒ@ƒCƒ‹
+# C# ãƒ•ã‚¡ã‚¤ãƒ«
 [*.cs]
 
-#### ƒRƒA EditorConfig ƒIƒvƒVƒ‡ƒ“ ####
+#### ã‚³ã‚¢ EditorConfig ã‚ªãƒ—ã‚·ãƒ§ãƒ³ ####
 
-# ƒCƒ“ƒfƒ“ƒg‚ÆŠÔŠu
+# ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆã¨é–“éš”
 indent_size = 4
 indent_style = space
 tab_width = 4
 
-# ‰üs‚ÆƒGƒ“ƒR[ƒhİ’è
+# æ”¹è¡Œã¨ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰è¨­å®š
 insert_final_newline = false
 
-#### .NET ƒR[ƒfƒBƒ“ƒO‹K‘¥ ####
+#### .NET ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°è¦å‰‡ ####
 
-# using ‚Ì®—
+# using ã®æ•´ç†
 dotnet_separate_import_directive_groups = false
 dotnet_sort_system_directives_first = false
 
-# this. ‚Æ Me. ‚Ìİ’è
+# this. ã¨ Me. ã®è¨­å®š
 dotnet_style_qualification_for_event = false:silent
 dotnet_style_qualification_for_field = false:silent
 dotnet_style_qualification_for_method = false:silent
 dotnet_style_qualification_for_property = false:silent
 
-# Œ¾ŒêƒL[ƒ[ƒh‚Æ BCL ‚Ìí—Ş‚Ìİ’è
+# è¨€èªã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰ã¨ BCL ã®ç¨®é¡ã®è¨­å®š
 dotnet_style_predefined_type_for_locals_parameters_members = true:silent
 dotnet_style_predefined_type_for_member_access = true:silent
 
-# ‚©‚Á‚±‚Ìİ’è
+# ã‹ã£ã“ã®è¨­å®š
 dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:silent
 dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:silent
 dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
 dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:silent
 
-# Cüqİ’è
+# ä¿®é£¾å­è¨­å®š
 dotnet_style_require_accessibility_modifiers = for_non_interface_members:silent
 
-# ®ƒŒƒxƒ‹‚Ìİ’è
+# å¼ãƒ¬ãƒ™ãƒ«ã®è¨­å®š
 csharp_style_deconstructed_variable_declaration = true:suggestion
 csharp_style_inlined_variable_declaration = true:suggestion
 csharp_style_throw_expression = true:suggestion
@@ -63,20 +73,20 @@ dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 dotnet_style_prefer_inferred_tuple_names = true:suggestion
 dotnet_style_prefer_is_null_check_over_reference_equality_method = true:suggestion
 
-# ƒtƒB[ƒ‹ƒhİ’è
+# ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰è¨­å®š
 dotnet_style_readonly_field = true:suggestion
 
-# ƒpƒ‰ƒ[ƒ^[‚Ìİ’è
+# ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼ã®è¨­å®š
 dotnet_code_quality_unused_parameters = all:suggestion
 
-#### C# ƒR[ƒfƒBƒ“ƒO‹K‘¥ ####
+#### C# ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°è¦å‰‡ ####
 
-# var ‚ğ—Dæ
+# var ã‚’å„ªå…ˆ
 csharp_style_var_elsewhere = false:silent
 csharp_style_var_for_built_in_types = false:silent
 csharp_style_var_when_type_is_apparent = false:silent
 
-# ®‚Ì‚æ‚¤‚Èƒƒ“ƒo[
+# å¼ã®ã‚ˆã†ãªãƒ¡ãƒ³ãƒãƒ¼
 csharp_style_expression_bodied_accessors = true:silent
 csharp_style_expression_bodied_constructors = false:silent
 csharp_style_expression_bodied_indexers = true:silent
@@ -86,23 +96,23 @@ csharp_style_expression_bodied_methods = false:silent
 csharp_style_expression_bodied_operators = false:silent
 csharp_style_expression_bodied_properties = true:silent
 
-# ƒpƒ^[ƒ“ ƒ}ƒbƒ`ƒ“ƒOİ’è
+# ãƒ‘ã‚¿ãƒ¼ãƒ³ ãƒãƒƒãƒãƒ³ã‚°è¨­å®š
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_prefer_switch_expression = true:suggestion
 
-# Null ƒ`ƒFƒbƒNİ’è
+# Null ãƒã‚§ãƒƒã‚¯è¨­å®š
 csharp_style_conditional_delegate_call = true:suggestion
 
-# Cüqİ’è
+# ä¿®é£¾å­è¨­å®š
 csharp_prefer_static_local_function = true:suggestion
 csharp_preferred_modifier_order = public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async
 
-# ƒR[ƒh ƒuƒƒbƒN‚Ìİ’è
+# ã‚³ãƒ¼ãƒ‰ ãƒ–ãƒ­ãƒƒã‚¯ã®è¨­å®š
 csharp_prefer_braces = true:silent
 csharp_prefer_simple_using_statement = true:suggestion
 
-# ®ƒŒƒxƒ‹‚Ìİ’è
+# å¼ãƒ¬ãƒ™ãƒ«ã®è¨­å®š
 csharp_prefer_simple_default_expression = true:suggestion
 csharp_style_pattern_local_over_anonymous_function = true:suggestion
 csharp_style_prefer_index_operator = true:suggestion
@@ -110,12 +120,12 @@ csharp_style_prefer_range_operator = true:suggestion
 csharp_style_unused_value_assignment_preference = discard_variable:suggestion
 csharp_style_unused_value_expression_statement_preference = discard_variable:silent
 
-# 'using' ƒfƒBƒŒƒNƒeƒBƒu‚ÌŠî–{İ’è
+# 'using' ãƒ‡ã‚£ãƒ¬ã‚¯ãƒ†ã‚£ãƒ–ã®åŸºæœ¬è¨­å®š
 csharp_using_directive_placement = outside_namespace:silent
 
-#### C# ‘®ƒ‹[ƒ‹ ####
+#### C# æ›¸å¼ãƒ«ãƒ¼ãƒ« ####
 
-# ‰üsİ’è
+# æ”¹è¡Œè¨­å®š
 csharp_new_line_before_catch = true
 csharp_new_line_before_else = true
 csharp_new_line_before_finally = true
@@ -124,7 +134,7 @@ csharp_new_line_before_members_in_object_initializers = true
 csharp_new_line_before_open_brace = all
 csharp_new_line_between_query_expression_clauses = true
 
-# ƒCƒ“ƒfƒ“ƒgİ’è
+# ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆè¨­å®š
 csharp_indent_block_contents = true
 csharp_indent_braces = false
 csharp_indent_case_contents = true
@@ -132,7 +142,7 @@ csharp_indent_case_contents_when_block = true
 csharp_indent_labels = one_less_than_current
 csharp_indent_switch_labels = true
 
-# ƒXƒy[ƒXİ’è
+# ã‚¹ãƒšãƒ¼ã‚¹è¨­å®š
 csharp_space_after_cast = false
 csharp_space_after_colon_in_inheritance_clause = true
 csharp_space_after_comma = true
@@ -156,69 +166,69 @@ csharp_space_between_method_declaration_parameter_list_parentheses = false
 csharp_space_between_parentheses = false
 csharp_space_between_square_brackets = false
 
-# Ü‚è•Ô‚µ‚Ìİ’è
+# æŠ˜ã‚Šè¿”ã—ã®è¨­å®š
 csharp_preserve_single_line_blocks = true
 csharp_preserve_single_line_statements = true
 
-#### –½–¼ƒXƒ^ƒCƒ‹ ####
+#### å‘½åã‚¹ã‚¿ã‚¤ãƒ« ####
 
-# –½–¼‹K‘¥
+# å‘½åè¦å‰‡
 
-dotnet_naming_rule.interface_should_be_i_‚Ån‚Ü‚é.severity = suggestion
-dotnet_naming_rule.interface_should_be_i_‚Ån‚Ü‚é.symbols = interface
-dotnet_naming_rule.interface_should_be_i_‚Ån‚Ü‚é.style = i_‚Ån‚Ü‚é
+dotnet_naming_rule.interface_should_be_i_ã§å§‹ã¾ã‚‹.severity = suggestion
+dotnet_naming_rule.interface_should_be_i_ã§å§‹ã¾ã‚‹.symbols = interface
+dotnet_naming_rule.interface_should_be_i_ã§å§‹ã¾ã‚‹.style = i_ã§å§‹ã¾ã‚‹
 
-dotnet_naming_rule.Œ^_should_be_ƒpƒXƒJƒ‹_ƒP[ƒX.severity = suggestion
-dotnet_naming_rule.Œ^_should_be_ƒpƒXƒJƒ‹_ƒP[ƒX.symbols = Œ^
-dotnet_naming_rule.Œ^_should_be_ƒpƒXƒJƒ‹_ƒP[ƒX.style = ƒpƒXƒJƒ‹_ƒP[ƒX
+dotnet_naming_rule.å‹_should_be_ãƒ‘ã‚¹ã‚«ãƒ«_ã‚±ãƒ¼ã‚¹.severity = suggestion
+dotnet_naming_rule.å‹_should_be_ãƒ‘ã‚¹ã‚«ãƒ«_ã‚±ãƒ¼ã‚¹.symbols = å‹
+dotnet_naming_rule.å‹_should_be_ãƒ‘ã‚¹ã‚«ãƒ«_ã‚±ãƒ¼ã‚¹.style = ãƒ‘ã‚¹ã‚«ãƒ«_ã‚±ãƒ¼ã‚¹
 
-dotnet_naming_rule.const_should_be_ƒpƒXƒJƒ‹_ƒP[ƒX.severity = suggestion
-dotnet_naming_rule.const_should_be_ƒpƒXƒJƒ‹_ƒP[ƒX.symbols = const
-dotnet_naming_rule.const_should_be_ƒpƒXƒJƒ‹_ƒP[ƒX.style = ƒpƒXƒJƒ‹_ƒP[ƒX
+dotnet_naming_rule.const_should_be_ãƒ‘ã‚¹ã‚«ãƒ«_ã‚±ãƒ¼ã‚¹.severity = suggestion
+dotnet_naming_rule.const_should_be_ãƒ‘ã‚¹ã‚«ãƒ«_ã‚±ãƒ¼ã‚¹.symbols = const
+dotnet_naming_rule.const_should_be_ãƒ‘ã‚¹ã‚«ãƒ«_ã‚±ãƒ¼ã‚¹.style = ãƒ‘ã‚¹ã‚«ãƒ«_ã‚±ãƒ¼ã‚¹
 
-dotnet_naming_rule.ƒpƒ‰ƒ[ƒ^[_ƒ[ƒJƒ‹ƒtƒB[ƒ‹ƒh_should_be_ƒLƒƒƒƒ‹ƒP[ƒX.severity = suggestion
-dotnet_naming_rule.ƒpƒ‰ƒ[ƒ^[_ƒ[ƒJƒ‹ƒtƒB[ƒ‹ƒh_should_be_ƒLƒƒƒƒ‹ƒP[ƒX.symbols = ƒpƒ‰ƒ[ƒ^[_ƒ[ƒJƒ‹ƒtƒB[ƒ‹ƒh
-dotnet_naming_rule.ƒpƒ‰ƒ[ƒ^[_ƒ[ƒJƒ‹ƒtƒB[ƒ‹ƒh_should_be_ƒLƒƒƒƒ‹ƒP[ƒX.style = ƒLƒƒƒƒ‹ƒP[ƒX
+dotnet_naming_rule.ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼_ãƒ­ãƒ¼ã‚«ãƒ«ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰_should_be_ã‚­ãƒ£ãƒ¡ãƒ«ã‚±ãƒ¼ã‚¹.severity = suggestion
+dotnet_naming_rule.ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼_ãƒ­ãƒ¼ã‚«ãƒ«ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰_should_be_ã‚­ãƒ£ãƒ¡ãƒ«ã‚±ãƒ¼ã‚¹.symbols = ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼_ãƒ­ãƒ¼ã‚«ãƒ«ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰
+dotnet_naming_rule.ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼_ãƒ­ãƒ¼ã‚«ãƒ«ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰_should_be_ã‚­ãƒ£ãƒ¡ãƒ«ã‚±ãƒ¼ã‚¹.style = ã‚­ãƒ£ãƒ¡ãƒ«ã‚±ãƒ¼ã‚¹
 
-dotnet_naming_rule.ƒtƒB[ƒ‹ƒhˆÈŠO‚Ìƒƒ“ƒo[_should_be_ƒpƒXƒJƒ‹_ƒP[ƒX.severity = suggestion
-dotnet_naming_rule.ƒtƒB[ƒ‹ƒhˆÈŠO‚Ìƒƒ“ƒo[_should_be_ƒpƒXƒJƒ‹_ƒP[ƒX.symbols = ƒtƒB[ƒ‹ƒhˆÈŠO‚Ìƒƒ“ƒo[
-dotnet_naming_rule.ƒtƒB[ƒ‹ƒhˆÈŠO‚Ìƒƒ“ƒo[_should_be_ƒpƒXƒJƒ‹_ƒP[ƒX.style = ƒpƒXƒJƒ‹_ƒP[ƒX
+dotnet_naming_rule.ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ä»¥å¤–ã®ãƒ¡ãƒ³ãƒãƒ¼_should_be_ãƒ‘ã‚¹ã‚«ãƒ«_ã‚±ãƒ¼ã‚¹.severity = suggestion
+dotnet_naming_rule.ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ä»¥å¤–ã®ãƒ¡ãƒ³ãƒãƒ¼_should_be_ãƒ‘ã‚¹ã‚«ãƒ«_ã‚±ãƒ¼ã‚¹.symbols = ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ä»¥å¤–ã®ãƒ¡ãƒ³ãƒãƒ¼
+dotnet_naming_rule.ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ä»¥å¤–ã®ãƒ¡ãƒ³ãƒãƒ¼_should_be_ãƒ‘ã‚¹ã‚«ãƒ«_ã‚±ãƒ¼ã‚¹.style = ãƒ‘ã‚¹ã‚«ãƒ«_ã‚±ãƒ¼ã‚¹
 
-# ‹L†‚Ìd—l
+# è¨˜å·ã®ä»•æ§˜
 
 dotnet_naming_symbols.interface.applicable_kinds = interface
 dotnet_naming_symbols.interface.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
 dotnet_naming_symbols.interface.required_modifiers = 
 
-dotnet_naming_symbols.Œ^.applicable_kinds = class, struct, interface, enum
-dotnet_naming_symbols.Œ^.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
-dotnet_naming_symbols.Œ^.required_modifiers = 
+dotnet_naming_symbols.å‹.applicable_kinds = class, struct, interface, enum
+dotnet_naming_symbols.å‹.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.å‹.required_modifiers = 
 
-dotnet_naming_symbols.ƒtƒB[ƒ‹ƒhˆÈŠO‚Ìƒƒ“ƒo[.applicable_kinds = property, event, method
-dotnet_naming_symbols.ƒtƒB[ƒ‹ƒhˆÈŠO‚Ìƒƒ“ƒo[.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
-dotnet_naming_symbols.ƒtƒB[ƒ‹ƒhˆÈŠO‚Ìƒƒ“ƒo[.required_modifiers = 
+dotnet_naming_symbols.ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ä»¥å¤–ã®ãƒ¡ãƒ³ãƒãƒ¼.applicable_kinds = property, event, method
+dotnet_naming_symbols.ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ä»¥å¤–ã®ãƒ¡ãƒ³ãƒãƒ¼.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ä»¥å¤–ã®ãƒ¡ãƒ³ãƒãƒ¼.required_modifiers = 
 
 dotnet_naming_symbols.const.applicable_kinds = property, field, local, method, local_function
 dotnet_naming_symbols.const.applicable_accessibilities = *
 dotnet_naming_symbols.const.required_modifiers = const
 
-dotnet_naming_symbols.ƒpƒ‰ƒ[ƒ^[_ƒ[ƒJƒ‹ƒtƒB[ƒ‹ƒh.applicable_kinds = field, parameter, local
-dotnet_naming_symbols.ƒpƒ‰ƒ[ƒ^[_ƒ[ƒJƒ‹ƒtƒB[ƒ‹ƒh.applicable_accessibilities = *
-dotnet_naming_symbols.ƒpƒ‰ƒ[ƒ^[_ƒ[ƒJƒ‹ƒtƒB[ƒ‹ƒh.required_modifiers = 
+dotnet_naming_symbols.ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼_ãƒ­ãƒ¼ã‚«ãƒ«ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰.applicable_kinds = field, parameter, local
+dotnet_naming_symbols.ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼_ãƒ­ãƒ¼ã‚«ãƒ«ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰.applicable_accessibilities = *
+dotnet_naming_symbols.ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼_ãƒ­ãƒ¼ã‚«ãƒ«ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰.required_modifiers = 
 
-# –½–¼ƒXƒ^ƒCƒ‹
+# å‘½åã‚¹ã‚¿ã‚¤ãƒ«
 
-dotnet_naming_style.ƒpƒXƒJƒ‹_ƒP[ƒX.required_prefix = 
-dotnet_naming_style.ƒpƒXƒJƒ‹_ƒP[ƒX.required_suffix = 
-dotnet_naming_style.ƒpƒXƒJƒ‹_ƒP[ƒX.word_separator = 
-dotnet_naming_style.ƒpƒXƒJƒ‹_ƒP[ƒX.capitalization = pascal_case
+dotnet_naming_style.ãƒ‘ã‚¹ã‚«ãƒ«_ã‚±ãƒ¼ã‚¹.required_prefix = 
+dotnet_naming_style.ãƒ‘ã‚¹ã‚«ãƒ«_ã‚±ãƒ¼ã‚¹.required_suffix = 
+dotnet_naming_style.ãƒ‘ã‚¹ã‚«ãƒ«_ã‚±ãƒ¼ã‚¹.word_separator = 
+dotnet_naming_style.ãƒ‘ã‚¹ã‚«ãƒ«_ã‚±ãƒ¼ã‚¹.capitalization = pascal_case
 
-dotnet_naming_style.i_‚Ån‚Ü‚é.required_prefix = I
-dotnet_naming_style.i_‚Ån‚Ü‚é.required_suffix = 
-dotnet_naming_style.i_‚Ån‚Ü‚é.word_separator = 
-dotnet_naming_style.i_‚Ån‚Ü‚é.capitalization = pascal_case
+dotnet_naming_style.i_ã§å§‹ã¾ã‚‹.required_prefix = I
+dotnet_naming_style.i_ã§å§‹ã¾ã‚‹.required_suffix = 
+dotnet_naming_style.i_ã§å§‹ã¾ã‚‹.word_separator = 
+dotnet_naming_style.i_ã§å§‹ã¾ã‚‹.capitalization = pascal_case
 
-dotnet_naming_style.ƒLƒƒƒƒ‹ƒP[ƒX.required_prefix = 
-dotnet_naming_style.ƒLƒƒƒƒ‹ƒP[ƒX.required_suffix = 
-dotnet_naming_style.ƒLƒƒƒƒ‹ƒP[ƒX.word_separator = 
-dotnet_naming_style.ƒLƒƒƒƒ‹ƒP[ƒX.capitalization = camel_case
+dotnet_naming_style.ã‚­ãƒ£ãƒ¡ãƒ«ã‚±ãƒ¼ã‚¹.required_prefix = 
+dotnet_naming_style.ã‚­ãƒ£ãƒ¡ãƒ«ã‚±ãƒ¼ã‚¹.required_suffix = 
+dotnet_naming_style.ã‚­ãƒ£ãƒ¡ãƒ«ã‚±ãƒ¼ã‚¹.word_separator = 
+dotnet_naming_style.ã‚­ãƒ£ãƒ¡ãƒ«ã‚±ãƒ¼ã‚¹.capitalization = camel_case
