@@ -428,6 +428,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a65df19f3982f241be62d7293693c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mouseToLength: 0.75
+  lengthToVelocity: 4
+  barMax: 4
+  ignoreLength: 0.05
 --- !u!1 &1211176600
 GameObject:
   m_ObjectHideFlags: 0
