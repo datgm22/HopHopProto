@@ -4,18 +4,19 @@ using UnityEngine;
 
 namespace HopHop
 {
-    public class Indicator : MonoBehaviour
+    public class Indicator : MonoBehaviour, IPlayerState
     {
-        // Start is called before the first frame update
-        void Start()
+        public void Init()
         {
-        
+            PlayerController.Instance.Mover.StartRun();
         }
 
-        // Update is called once per frame
-        void Update()
+        public void Terminate()
         {
-        
+        }
+
+        public void UpdateState()
+        {
         }
     }
 }

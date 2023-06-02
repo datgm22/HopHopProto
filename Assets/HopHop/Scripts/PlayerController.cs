@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace HopHop
@@ -16,7 +14,9 @@ namespace HopHop
         /// </summary>
         public PlayerMover Mover { get; private set; }
 
-        Indicator indicator;
+        public Indicator IndicatorInstance { get; private set; }
+
+        PlayerStateWaitStart stateWaitStart = new();
 
         /// <summary>
         /// 切り替え予定の状態
@@ -31,7 +31,8 @@ namespace HopHop
         {
             Instance = this;
             Mover = GetComponent<PlayerMover>();
-            indicator = GetComponentInChildren<Indicator>();
+            IndicatorInstance = GetComponentInChildren<Indicator>();
+            ChangeState(stateWaitStart, true);
         }
 
         private void Update()
@@ -51,7 +52,7 @@ namespace HopHop
             }
 
             // 更新処理
-            currentState?.Update();            
+            currentState?.UpdateState();            
         }
 
         /// <summary>

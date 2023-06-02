@@ -7,7 +7,7 @@ namespace HopHop
     public interface IPlayerState
     {
         void Init();
-        void Update();
+        void UpdateState();
         void Terminate();
     }
 }

@@ -11,7 +11,7 @@ namespace HopHop
             Debug.Log($"Start Uncontrol");
         }
 
-        public void Update()
+        public void UpdateState()
         {
             Debug.Log($"Update Uncontrol");
         }
