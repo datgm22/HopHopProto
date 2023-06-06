@@ -8,17 +8,26 @@ namespace HopHop
     {
         public void Init()
         {
-            Debug.Log($"Start Uncontrol");
+            PlayerController.Instance.onCollisionWall.AddListener(OnCollisionWall);
         }
 
-        public void UpdateState()
-        {
-            Debug.Log($"Update Uncontrol");
-        }
+        public void UpdateState() { }
 
         public void Terminate()
         {
-            Debug.Log($"Terminate Uncontrol");
+            PlayerController.Instance.onCollisionWall.RemoveListener(OnCollisionWall);
+        }
+
+        /// <summary>
+        /// 壁に接触した時に、ゲーム継続可能な状態ならプレイ状態へ移行
+        /// </summary>
+        void OnCollisionWall()
+        {
+            if (GameBehaviour.Instance.CurrentState == GameBehaviour.State.Play)
+            {
+                // プレイヤーの状態を跳ね返り待ちへ変更
+                PlayerController.Instance.ChangeState(PlayerController.Instance.IndicatorInstance);
+            }
         }
     }
 }
