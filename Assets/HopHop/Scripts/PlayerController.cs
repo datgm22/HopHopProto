@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace HopHop
 {
@@ -8,6 +9,11 @@ namespace HopHop
     public class PlayerController : MonoBehaviour
     {
         public static PlayerController Instance { get; private set; }
+
+        /// <summary>
+        /// 壁に接触した時の処理の登録場所
+        /// </summary>
+        public readonly UnityEvent onCollisionWall = new UnityEvent();
 
         /// <summary>
         /// PlayerMoverのインスタンス
@@ -96,6 +102,14 @@ namespace HopHop
             if (next != null)
             {
                 ChangeState(next);
+            }
+        }
+
+        private void OnCollisionEnter(Collision collision)
+        {
+            if (collision.collider.CompareTag("Wall"))
+            {
+                onCollisionWall.Invoke();
             }
         }
     }
