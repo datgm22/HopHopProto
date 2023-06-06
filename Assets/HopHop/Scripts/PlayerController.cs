@@ -105,6 +105,11 @@ namespace HopHop
             }
         }
 
+        private void OnCollisionStay(Collision collision)
+        {
+            OnCollisionEnter(collision);
+        }
+
         private void OnCollisionEnter(Collision collision)
         {
             if (collision.collider.CompareTag("Wall"))

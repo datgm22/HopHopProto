@@ -6,12 +6,22 @@ namespace HopHop
 {
     public class PlayerStateUncontrol : IPlayerState
     {
+        // 操作を無視する秒数
+        static float IgnoreSeconds => 0.1f;
+
+        // 開始から操作を無視する秒数のカウンタ
+        float ignoreTime;
+
         public void Init()
         {
             PlayerController.Instance.onCollisionWall.AddListener(OnCollisionWall);
+            ignoreTime = 0;
         }
 
-        public void UpdateState() { }
+        public void UpdateState()
+        {
+            ignoreTime += Time.deltaTime;
+        }
 
         public void Terminate()
         {
@@ -23,7 +33,8 @@ namespace HopHop
         /// </summary>
         void OnCollisionWall()
         {
-            if (GameBehaviour.Instance.CurrentState == GameBehaviour.State.Play)
+            if (    (ignoreTime >= IgnoreSeconds)
+                &&  (GameBehaviour.Instance.CurrentState == GameBehaviour.State.Play))
             {
                 // プレイヤーの状態を跳ね返り待ちへ変更
                 PlayerController.Instance.ChangeState(PlayerController.Instance.IndicatorInstance);
