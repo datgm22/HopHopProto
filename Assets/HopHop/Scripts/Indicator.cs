@@ -140,9 +140,9 @@ namespace HopHop
             //// Mathf.atan2() yとxを与えると、右方向からの角度がラジアンで返す
             //// Vector2.SignedAngle()は、2つのベクトルがなす角を度数(Degree)で返す
             float rad = Mathf.Atan2(deltaMove.y, deltaMove.x);
-            var euler = transform.localEulerAngles;
+            var euler = transform.eulerAngles;
             euler.z = 180f+Mathf.Rad2Deg * rad;
-            transform.localEulerAngles = euler;
+            transform.eulerAngles = euler;
         }
     }
 }
