@@ -56,6 +56,16 @@ namespace HopHop
         }
 
         /// <summary>
+        /// 物理座標を設定する。ついでに回転を停止する。
+        /// </summary>
+        /// <param name="pos">移動先の座標</param>
+        public void SetPosition(Vector3 pos)
+        {
+            rb.position = pos;
+            rb.angularVelocity = Vector3.zero;
+        }
+
+        /// <summary>
         /// 物理演算を有効にする
         /// </summary>
         public void StartRun()

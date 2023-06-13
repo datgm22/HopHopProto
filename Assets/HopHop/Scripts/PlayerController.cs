@@ -20,9 +20,15 @@ namespace HopHop
         /// </summary>
         public PlayerMover Mover { get; private set; }
 
-        public Indicator IndicatorInstance { get; private set; }
+        /// <summary>
+        /// クリック待ち状態
+        /// </summary>
+        public PlayerStateWaitStart StateWaitStart { get; private set; } = new();
 
-        PlayerStateWaitStart stateWaitStart = new();
+        /// <summary>
+        /// インジケーター操作状態
+        /// </summary>
+        public Indicator IndicatorInstance { get; private set; }
 
         /// <summary>
         /// 切り替え予定の状態
@@ -33,12 +39,18 @@ namespace HopHop
         /// </summary>
         IPlayerState currentState;
 
+        /// <summary>
+        /// シーンが開始した時の座標
+        /// </summary>
+        public Vector3 StartPosition { get; private set; }
+
         private void Awake()
         {
             Instance = this;
             Mover = GetComponent<PlayerMover>();
             IndicatorInstance = GetComponentInChildren<Indicator>();
-            ChangeState(stateWaitStart, true);
+            ChangeState(StateWaitStart, true);
+            StartPosition = transform.position;
         }
 
         private void Update()
